@@ -30,8 +30,8 @@ basics of containerisation, Kubernetes and pipelines."
     print("-" * 20)
 
     """Create a directory and a file for each student."""
-    Path("/home/johno/Documents/VS/Coding/feedback").mkdir(parents=True, exist_ok=True)
-    file_path = "/home/johno/Documents/VS/Coding/feedback"    
+    file_path = "./Coding/feedback"
+    Path(file_path).mkdir(parents=True, exist_ok=True)
     new_user = f"{file_path}/{student}"
     with open(new_user + ".txt", "w") as write_to_file:
         write_to_file.write(template)
