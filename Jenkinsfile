@@ -4,7 +4,7 @@ pipeline{
 
     environment {
 	    IMAGE_NAME = 'mynginx'
-        CONTAINER_PORT = 80
+        CONTAINER_PORT = 81
         NGINX_PORT = 80
         SECRET_VAR = credentials('nginx_var')
     }
