@@ -17,7 +17,7 @@ pipeline{
       stage('Build') {
             steps {
               scripts{
-                docker.build("NGINX_IMAGE_NAME")
+                docker.build("IMAGE_NAME")
               }
             }
         }
